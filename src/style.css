@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&family=Outfit:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Outfit", sans-serif;
+}
+
+@layer components {
+  .featured-card {
+    @apply card w-96 bg-base-100 shadow-xl rounded-sm;
+  }
+
+  .pick-card {
+    @apply card w-96 bg-base-100 shadow-xl image-full;
+  }
+
+  .custom-badge {
+    @apply px-4 py-1 bg-green-200 text-green-600 font-semibold rounded-full shadow-sm hover:shadow;
+  }
+}
